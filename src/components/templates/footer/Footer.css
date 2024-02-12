@@ -1,0 +1,228 @@
+ .footer-container {
+    background-color: #DA251C;
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-subscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 24px;
+    color: #fff;
+    /* border: 1px solid white; */
+}
+
+.footer-subscription-heading {
+    margin-bottom: 13px;
+    font-size: 20.5px;
+}
+
+.footer-subscription-text {
+    margin-bottom: 2px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.input-areas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-input {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 2px;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+}
+
+.social-icons-alone,
+.footer-link-items {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.footer-link-items h2 {
+    font-weight: 350;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.footer-link-items a {
+    color: #fff;
+    font-size: 0.77rem;
+    font-weight: 300;
+
+}
+
+.hover-links a:hover {
+    color: #000;
+}
+
+.social-icons a {
+    color: #000;
+}
+
+.social-icon-link {
+    padding: 0.3rem 0.4rem;
+    background-color: #fff;
+    border-radius: 70%;
+}
+
+.facebook {
+    padding: 0.3rem 0.5rem;
+}
+
+.youtube {
+    padding: 0.3rem 0.3rem;
+}
+
+@media screen and (min-width: 478px) {
+    .footer-wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 4%;
+    }
+    
+    .footer-subscription,
+    .footer-link-items {
+        flex-basis: 48%;
+        align-items: flex-start;
+        /* border: 1px solid white; */
+    }
+
+    .social-icons-alone {
+        align-items: flex-start;
+        width: 80px;
+        /* border: 1px solid white; */
+        padding-left: 0;
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-wrapper {
+        flex-flow: row nowrap;
+        width: 90%;
+        max-width: 1020px;
+    }
+
+    .footer-subscription {
+        flex-basis: 62%;
+    }
+
+    .footer-link-items {
+        flex-basis: 35%;
+    }
+}
+
+/* Copyright Section */
+
+.social-media::before {
+    content: '';
+    display: block;
+    width: 130%;
+    height: 1px;
+    margin: 0;
+    background: #fff;
+    opacity: 0.25;
+    margin-top: 0;
+    max-width: 1000px;
+}
+
+.social-media {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    width: 70%;
+    text-align: center;
+    padding-top: 0;
+}
+
+.social-media-wrap {
+    /* border: 1px solid white; */
+    margin-bottom: 0.1rem;
+}
+
+.website-rights {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 0.73em;
+    /* border: 1px solid white; */
+}
+
+.privacy-links {
+    /* border: 1px solid blue; */
+    font-size: 0.77em;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.privacy-links a {
+    color: #fff;
+    font-weight: 300;
+}
+
+.privacy-links a:hover {
+    color: #000;
+}
+
+
+@media screen and (min-width: 768px) {
+    .social-media {
+        display: flex;
+        flex-flow: row wrap;
+        /* border: 1px solid black; */
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        max-width: 1000px;
+        gap: 0;
+    }
+
+    .social-media-wrap {
+        /* border: 1px solid blue; */
+        flex-basis: 61.5%;
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .privacy-links {
+        flex-basis: 38.5%;
+        /* border: 1px solid green; */
+        justify-content: flex-end;
+        padding-right: 1rem;
+    }
+
+    .social-media::before {
+        display: block;
+        width: 130%;
+        margin: 0;
+        max-width: 1000px;
+        margin-bottom: 1rem;
+    }
+
+    .privacy-links a {
+        text-align: right;
+    }
+}

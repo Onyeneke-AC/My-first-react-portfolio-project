@@ -1,0 +1,34 @@
+export const PropProdData = [
+    {
+        src:"./prop_prod/prop_class.jpg", 
+        alt:"Class",
+    },
+    {
+        src:"./prop_prod/prop_exam.jpg", 
+        alt:"Exam",
+    },
+    {
+        src:"./prop_prod/prop_hand.jpg", 
+        alt:"Handshake",
+    },
+    {
+        src:"./prop_prod/prop_knowledge.jpg", 
+        alt:"Knowledge",
+    },
+    {
+        src:"./prop_prod/prop_process.jpg", 
+        alt:"Process",
+    },
+    {
+       src:"./prop_prod/prop_revenue.jpg", 
+       alt:"Revenue", 
+    },
+    {
+        src:"./prop_prod/prop_sign.jpg",
+        alt:"Signature",
+    },
+    {
+        src:"./prop_prod/prop_test.jpg", 
+        alt:"Test",
+    },
+]

@@ -1,0 +1,47 @@
+:root {
+    --total-partners: 40;
+    --total-clients: 13;
+    --logo-width: 11rem;
+
+    --total-clients-width: calc(var(var(--total-clients)) * var(var(--logo-width) * 2));
+
+    --total-partners-width: calc(var(var(--total-partners)) * var(var(--logo-width) * 2));
+}
+
+.part--cli {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-bottom: 6rem;
+}
+
+.partners_brands {
+    /* border: 4px solid green; */
+    display: flex;
+    width: var(--total-partners-width);
+    align-items: center;
+    gap: 20px;
+    animation: slideLeft 150s linear infinite;
+
+}
+
+.clients_brands {
+    display: flex;
+    width: var(--total-clients-width);
+    align-items: center;
+    gap: 20px;
+    animation: slideLeft 50s linear infinite;
+}
+
+.slider:hover .partners_brands,
+.slider:hover .clients_brands {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.carousel_img {
+    /* border: 2px solid green; */
+    width: 11rem;
+}
