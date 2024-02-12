@@ -5,7 +5,7 @@ import { Button } from '../../../atoms/Button';
 
 function Clients() {
   return (
-    <div className='part--cli'>
+    <div className='part--cli cli'>
         <h2 className='sub_h2'>Our Clients</h2>
 
         <div className="my-slider">

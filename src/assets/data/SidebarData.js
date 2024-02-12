@@ -5,7 +5,7 @@ export const SidebarData = [
     },
     {
         title: 'About Us',
-        path: '/about',
+        path: '',  
         iconClosed: <i className="fas fa-caret-down"/>,
         iconOpened: <i className="fas fa-caret-up"/>,
         subNav: [

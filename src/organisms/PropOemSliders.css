@@ -63,7 +63,7 @@
 #swipe .swiper-pagination-bullet {
     width: .65rem;
     height: .65rem;
-    /* margin: 0.375rem; */
+    margin: 0.375rem 0.375rem 0;
 }
 
 #swipe .swiper-pagination-bullet-active {

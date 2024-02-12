@@ -17,6 +17,10 @@
     padding-bottom: 6rem;
 }
 
+.cli {
+    margin-top: 1.5rem;
+}
+
 .partners_brands {
     /* border: 4px solid green; */
     display: flex;
