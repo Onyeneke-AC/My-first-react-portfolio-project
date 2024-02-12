@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../../App.css';
 import Navbar from '../templates/header/Navbar';
 import Extra from '../templates/intro/Extra';
 import Sidebar from '../templates/header/Sidebar';

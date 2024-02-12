@@ -31,12 +31,6 @@ img {
   padding-bottom: 2.5px;
 }
 
-@media screen and (min-width: 1200px) {
-  .sub_h2 {
-    width: 73.5vw;
-  }
-}
-
 .my-slider {
     /* border: 1px solid black; */
     width: 90vw;
@@ -54,7 +48,13 @@ img {
     overflow: hidden;
 }
 
+.swipe {
+  width: 90vw;
+  /* border: 1px solid black; */
+}
+
 @media (min-width: 1200px) {
+    .swipe,
     .my-slider,
     .sub_h2 {
         width: 73.5vw;

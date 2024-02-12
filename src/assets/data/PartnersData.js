@@ -64,7 +64,7 @@ export const PartnersData = [
         alt:"hitachi",
     },
     {
-        src:"./images/partners/part_/imageshp.jpg", 
+        src:"./images/partners/part_hp.jpg", 
         alt:"hp",
     },
     {
@@ -116,7 +116,7 @@ export const PartnersData = [
         alt:"proofpoint",
     },
     {
-        src:"./images/partners part_qualitykiosk.jpg", 
+        src:"./images/partners/part_qualitykiosk.jpg", 
         alt:"qualitykiosk",
     },
     {
