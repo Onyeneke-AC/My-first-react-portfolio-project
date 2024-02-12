@@ -50,6 +50,8 @@ img {
 
 .swipe {
   width: 90vw;
+  height: 180px;
+  margin-top: 2.5rem;
   /* border: 1px solid black; */
 }
 
