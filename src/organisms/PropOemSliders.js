@@ -36,7 +36,8 @@ function PropOemSliders({dataItem = []}) {
         swiper.navigation.update();
       }}
       
-      autoplay={{ delay: 10000 }}
+      autoplay={{ delay: 10000,
+      disableOnInteraction: false }}
       >
       {dataItem.map( item => 
       <SwiperSlide className="swipe-slide">

@@ -12,8 +12,14 @@
     /* border: 1px solid green; */
     width: 90vw;
     height: 380px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
+}
+
+@media screen and (min-width : 1200px) {
+    .swiper-service {
+        width: 73.5vw;
+    }
 }
 
 .swipe-me {

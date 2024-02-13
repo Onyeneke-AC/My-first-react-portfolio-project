@@ -1,6 +1,7 @@
 import React from 'react';
 import './Services.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
 import { Button } from '../../../atoms/Button';
 
 function Services() {
@@ -9,7 +10,24 @@ function Services() {
         <h2 className="sub_h2">
             Our Services
         </h2>
-        <Swiper spaceBetween={20}  speed={800}  slidesPerView={1}  className='swiper-service'>
+        <Swiper speed={800}
+        modules={[Autoplay]}
+        grabCursor={true}
+        effect={'slide'}
+        className='swiper-service'
+        autoplay={{ delay : 4000,
+        disableOnInteraction: false }}
+        breakpoints={{
+            0:{
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            780:{
+                slidesPerView: 3,
+                spaceBetween: 20,
+            }
+        }}
+        >
             <SwiperSlide className="swipe-me serv1">
                 <div className="serv">    
                     <i className="fas fa-caret-up" />
