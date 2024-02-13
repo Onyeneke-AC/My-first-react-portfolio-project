@@ -1,6 +1,7 @@
 import React from 'react';
 import './Services.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Button } from '../../../atoms/Button';
 
 function Services() {
   return (
@@ -12,7 +13,7 @@ function Services() {
             <SwiperSlide className="swipe-me serv1">
                 <div className="serv">    
                     <i className="fas fa-caret-up" />
-                     <h3 className="serv__h3">
+                     <h3 className="serv_h3">
                         Advisory
                     </h3>
                     <p>
@@ -23,7 +24,7 @@ function Services() {
             <SwiperSlide className="swipe-me serv2">
                 <div className="serv">
                     <i className="fas fa-caret-up" />
-                    <h3 className="serv__h3">
+                    <h3 className="serv_h3">
                         Information Technology
                     </h3>
                     <p>
@@ -34,7 +35,7 @@ function Services() {
             <SwiperSlide className="swipe-me serv3">
                 <div className="serv">
                     <i className="fas fa-caret-up" />
-                    <h3 className="serv__h3">
+                    <h3 className="serv_h3">
                         Managed Services
                     </h3>
                     <p>
@@ -43,6 +44,11 @@ function Services() {
                 </div>
             </SwiperSlide>
         </Swiper>
+        <div className="btn_int">
+            <Button className='btns' buttonStyle='btn--primary' buttonRoute='/clients' buttonSize='btn--normal'>
+                    Read more
+            </Button>
+      </div>
     </div>
   )
 }

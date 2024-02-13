@@ -18,7 +18,7 @@ function PropProd() {
             <Button className='btns' buttonStyle='btn--primary' buttonRoute='/clients' buttonSize='btn--normal'>
                     Read more
             </Button>
-        </div>
+      </div>
     </div>
   )
 }
