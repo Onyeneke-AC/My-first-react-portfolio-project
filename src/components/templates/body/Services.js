@@ -1,7 +1,7 @@
 import React from 'react';
 import './Services.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
+import { Autoplay, Keyboard } from 'swiper';
 import { Button } from '../../../atoms/Button';
 
 function Services() {
@@ -11,8 +11,9 @@ function Services() {
             Our Services
         </h2>
         <Swiper speed={800}
-        modules={[Autoplay]}
+        modules={[Autoplay, Keyboard]}
         grabCursor={true}
+        keyboard={{ enabled: true }}
         effect={'slide'}
         className='swiper-service'
         autoplay={{ delay : 4000,

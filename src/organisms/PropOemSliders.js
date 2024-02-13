@@ -27,7 +27,6 @@ function PropOemSliders({dataItem = []}) {
       slidesPerGroup={4}
       speed={800}
       loop={"true"}
-      keyboard={{ enabled: true }}
       className='swipe'
       id='swipe'
       
