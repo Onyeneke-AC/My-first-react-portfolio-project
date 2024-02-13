@@ -19,6 +19,7 @@
 
 img {
   width: 100%;
+  display: block;
 }
 
 .sub_h2 {

@@ -63,12 +63,24 @@ div .serv {
 } */
 
 .swiper-service {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 90vw;
     height: 380px;
     margin-top: 1rem;
 }
 
-div.serv {
-    border: 1px solid red;
+.swipe-me {
+    border: 1px solid black;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 3rem 2em 0;
+}
+
+.serv1 {
+    background-image: url(../../../../public/images/bgs/bg-1.jpg);
+}
+
+.serv {
+    /* border: 1px solid red; */
 }
