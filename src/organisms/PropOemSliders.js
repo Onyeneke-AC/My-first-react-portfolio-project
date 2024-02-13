@@ -1,13 +1,10 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, EffectFade, Autoplay, Pagination } from 'swiper';
+import { Navigation, Autoplay, Pagination } from 'swiper';
 import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/pagination'
-// import 'swiper/css/navigation';
-import 'swiper/css/effect-fade';
 import './PropOemSliders.css';
-// import { PropProdData } from '../assets/data/PropProdData';
 import { useRef } from 'react';
 
 function PropOemSliders({dataItem = []}) {
@@ -17,7 +14,7 @@ function PropOemSliders({dataItem = []}) {
 
   return (
     <Swiper
-      modules={[Navigation, EffectFade, Autoplay, Pagination]}
+      modules={[Navigation, Autoplay, Pagination]}
       navigation = {{
         prevEl: swiperNavPrevRef,
         nextEl: swiperNavNextRef

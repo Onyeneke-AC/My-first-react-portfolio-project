@@ -61,3 +61,12 @@ div .serv {
         padding: 2rem 1rem;
     }
 } */
+
+.swiper-service {
+    border: 1px solid green;
+    width: 90vw;
+}
+
+div.serv {
+    border: 1px solid red;
+}
