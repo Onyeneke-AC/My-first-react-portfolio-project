@@ -59,7 +59,7 @@ function Navbar() {
                             onMouseEnter={onMouseEnter1}
                             onMouseLeave={onMouseLeave1}
                         >
-                            <NavLink to='/about' className='nav-links'>
+                            <NavLink to='/intro' className='nav-links'>
                                 About Us <i className="fas fa-caret-down"/>
                             </NavLink>
                             {dropdown1 && <Dropdown dataItem={MenuItems} />}

@@ -1,7 +1,8 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay, Pagination } from 'swiper';
+import { Navigation, Autoplay, Pagination, Keyboard } from 'swiper';
 import 'swiper/css'
+import 'swiper/css/keyboard'
 import 'swiper/css/autoplay'
 import 'swiper/css/pagination'
 import './PropOemSliders.css';
@@ -14,7 +15,7 @@ function PropOemSliders({dataItem = []}) {
 
   return (
     <Swiper
-      modules={[Navigation, Autoplay, Pagination]}
+      modules={[Navigation, Autoplay, Pagination, Keyboard]}
       navigation = {{
         prevEl: swiperNavPrevRef,
         nextEl: swiperNavNextRef
@@ -26,6 +27,7 @@ function PropOemSliders({dataItem = []}) {
       slidesPerGroup={4}
       speed={800}
       loop={"true"}
+      keyboard={{ enabled: true }}
       className='swipe'
       id='swipe'
       
@@ -37,7 +39,8 @@ function PropOemSliders({dataItem = []}) {
       }}
       
       autoplay={{ delay: 10000,
-      disableOnInteraction: false }}
+                  disableOnInteraction: false 
+          }}
       >
       {dataItem.map( item => 
       <SwiperSlide className="swipe-slide">

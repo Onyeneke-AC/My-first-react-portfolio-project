@@ -16,7 +16,8 @@ function Services() {
         effect={'slide'}
         className='swiper-service'
         autoplay={{ delay : 4000,
-        disableOnInteraction: false }}
+                    disableOnInteraction: false 
+        }}
         breakpoints={{
             0:{
                 slidesPerView: 1,
