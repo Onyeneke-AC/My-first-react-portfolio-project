@@ -46,31 +46,41 @@ const SubMenu = ({ item }) => {
   const [subnav, setSubnav] = useState(false);
 
   const showSubnav = () => setSubnav(!subnav);
+  
+  if (item.path===null){
+    return (
+      <>
+        <div className="sidebar-link" to={item.path} onClick={item.subNav && showSubnav}>
+          <div>
+            <SidebarLabel>{item.title}</SidebarLabel>
+          </div>
+          <div>
+            {item.subNav && subnav
+              ? item.iconOpened
+              : item.subNav
+              ? item.iconClosed
+              : null}
+          </div>
+        </div>
 
-  return (
-    <>
-      <NavLink className="sidebar-link" to={item.path} onClick={item.subNav && showSubnav}>
+        {subnav &&
+          item.subNav.map((item, index) => {
+            return (
+              <DropdownLink to={item.path} key={index}>
+                <SidebarLabel>{item.title}</SidebarLabel>
+              </DropdownLink>
+            );
+          })}
+      </>
+    );
+  } else return (
+    <NavLink className="sidebar-link" to={item.path} onClick={item.subNav && showSubnav}>
         <div>
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
-        <div>
-          {item.subNav && subnav
-            ? item.iconOpened
-            : item.subNav
-            ? item.iconClosed
-            : null}
-        </div>
-      </NavLink>
-      {subnav &&
-        item.subNav.map((item, index) => {
-          return (
-            <DropdownLink to={item.path} key={index}>
-              <SidebarLabel>{item.title}</SidebarLabel>
-            </DropdownLink>
-          );
-        })}
-    </>
-  );
+    </NavLink>
+  )
+
 };
 
 export default SubMenu;

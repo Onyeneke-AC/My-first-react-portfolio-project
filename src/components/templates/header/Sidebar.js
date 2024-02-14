@@ -24,6 +24,7 @@ import "./Sidebar.css";
 // `;
 
 const Sidebar = () => {
+  
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -61,5 +62,5 @@ const Sidebar = () => {
     </>
   );
 };
-
+ 
 export default Sidebar;

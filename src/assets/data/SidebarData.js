@@ -5,7 +5,7 @@ export const SidebarData = [
     },
     {
         title: 'About Us',
-        path: '/about',  
+        path: null,
         iconClosed: <i className="fas fa-caret-down"/>,
         iconOpened: <i className="fas fa-caret-up"/>,
         subNav: [
@@ -16,7 +16,7 @@ export const SidebarData = [
             {
                 title: 'Our Team',
                 path: '/team',
-            },
+            }, 
             {
                 title: 'Awards',
                 path: '/awards',
@@ -41,7 +41,7 @@ export const SidebarData = [
     },
     {
         title: 'Media',
-        path: '/media',
+        path: null,
         iconClosed: <i className="fas fa-caret-down"/>,
         iconOpened: <i className="fas fa-caret-up"/>,
         subNav: [

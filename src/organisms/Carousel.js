@@ -4,13 +4,13 @@ import "../components/templates/header/News.css";
 
 // const FONT = ['font--news', 'font--logo']
 
-export const Carousel  = ({ item, fontSize }) => {
+export const Carousel  = ({ item }) => {
 
     // const checkFontSize = FONT.includes(fontSize)? fontSize : FONT[1];
 
     return (
         <Link to={item.path} className="carousel_link">
-            <div className={`carousel`}> { item.news } </div>
+            <div className="carousel"> { item.news } </div>
         </Link>
     )
 };
