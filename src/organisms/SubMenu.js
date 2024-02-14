@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink,} from 'react-router-dom';
 import styled from 'styled-components';
 import '../components/templates/header/Sidebar.css';
 
@@ -47,8 +47,9 @@ const SubMenu = ({ item }) => {
 
   const showSubnav = () => setSubnav(!subnav);
   
-  if (item.path===null){
     return (
+      <>
+      { !item.path ?
       <>
         <div className="sidebar-link" to={item.path} onClick={item.subNav && showSubnav}>
           <div>
@@ -71,15 +72,23 @@ const SubMenu = ({ item }) => {
               </DropdownLink>
             );
           })}
-      </>
-    );
-  } else return (
+      </> :
     <NavLink className="sidebar-link" to={item.path} onClick={item.subNav && showSubnav}>
         <div>
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
+        <div>
+            {item.subNav && subnav
+            ? item.iconOpened
+            : item.subNav
+            ? item.iconClosed
+            : null}
+        </div>
     </NavLink>
-  )
+    }
+    </>
+    );
+
 
 };
 
