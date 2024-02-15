@@ -73,7 +73,7 @@ const SubMenu = ({ item }) => {
             );
           })}
       </> :
-    <NavLink className="sidebar-link" to={item.path} onClick={item.subNav && showSubnav}>
+    <NavLink className="sidebar-link" to={item.path}>
         <div>
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
