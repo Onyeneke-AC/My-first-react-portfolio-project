@@ -10,8 +10,6 @@ function Navbar() {
     const [dropdown1, setDropdown1] = useState(false);
     const [dropdown2, setDropdown2] = useState(false);
 
-
-
     const onMouseEnter1 = () => {
         if (window.innerWidth < 765) {
             setDropdown1(false);
@@ -59,9 +57,9 @@ function Navbar() {
                             onMouseEnter={onMouseEnter1}
                             onMouseLeave={onMouseLeave1}
                         >
-                            <NavLink to='/' className='nav-links'>
+                            <div to='/' className='nav-links'>
                                 About Us <i className="fas fa-caret-down"/>
-                            </NavLink>
+                            </div>
                             {dropdown1 && <Dropdown dataItem={MenuItems} />}
                         </li>
                         <li className="nav-item">
@@ -80,9 +78,9 @@ function Navbar() {
                             </NavLink>
                         </li>
                         <li className="nav-item" onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2}>
-                            <NavLink to='/media' className='nav-links'>
+                            <div to='/media' className='nav-links'>
                                 Media <i className="fas fa-caret-down"></i>
-                            </NavLink>
+                            </div>
                             {dropdown2 && <Dropdown dataItem={MediaItems}/>}
                         </li>
                         <li className="nav-item">
