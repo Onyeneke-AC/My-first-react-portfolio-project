@@ -6,7 +6,7 @@ export const MediaItems = [
     },
     {
         title: 'BLOG',
-        path: '/blog',
+        path: '/blogs',
         cName: 'dropdown-link'
     },
 ]
