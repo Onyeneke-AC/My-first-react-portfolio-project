@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import Products  from './components/pages/Partners';
 import Partners from './components/pages/Partners';
 import Clients from './components/pages/Clients';
+import ContactUs from './components/pages/ContactUs';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/partners' Component={Partners} />
           <Route path='/products' Component={Products} />
           <Route path='/clients' Component={Clients} />
+          <Route path='/contact-us' Component={ContactUs} />
         </Switch>
       </Router>
     </>
