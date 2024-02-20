@@ -10,6 +10,7 @@ import Blogs from './components/pages/Blogs';
 import Who from './components/pages/Who';
 import Team from './components/pages/Team'
 import Careers from './components/pages/Careers';
+import Awards from './components/pages/Awards';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/who' Component={Who} />
           <Route path='/team' Component={Team} />
           <Route path='/careers' Component={Careers} />
+          <Route path='/awards' Component={Awards} />
         </Switch>
       </Router>
     </>
