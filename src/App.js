@@ -8,6 +8,7 @@ import Clients from './components/pages/Clients';
 import ContactUs from './components/pages/ContactUs';
 import Blogs from './components/pages/Blogs';
 import Who from './components/pages/Who';
+import Team from './components/pages/Team'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/contact-us' Component={ContactUs} />
           <Route path='/blogs' Component={Blogs} />
           <Route path='/who' Component={Who} />
+          <Route path='/who' Component={Team} />
         </Switch>
       </Router>
     </>
