@@ -1,9 +1,10 @@
 import React from 'react'
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Dropdown from '../../../organisms/Dropdown';
 import { MenuItems } from '../assets/data/MenuItems';
 import { MediaItems } from '../assets/data/MediaItems';
+import '../components/templates/header/Navbar.css';
+import Dropdown from './Dropdown';
 
 function NavSubMenu({ item }) {
 
@@ -47,23 +48,33 @@ function NavSubMenu({ item }) {
   return (
     <>
     {
-    !item.path?
+    item.title==='About Us'?
+        <>
+        <div to={item.path} className='nav-links' onMouseEnter={onMouseEnter1} onMouseLeave={onMouseLeave1} >
+            {item.title} <i className="fas fa-caret-down"/>
+        </div>
+        {dropdown1 && <Dropdown dataItem={MenuItems} />}
+        </>
+    :
+
+    item.title === 'Media'?
+    
     <>
-                            <div to={item.path} className='nav-links' onMouseEnter={onMouseEnter1}
-                            onMouseLeave={onMouseLeave1} >
-                                About Us <i className="fas fa-caret-down"/>
-                            </div>
-                            {dropdown1 && <Dropdown dataItem={MenuItems} />}
-                            </>
-                         :
-
-                         <NavLink to={item.path} className='nav-links'>
-                            {item.title}
-                        </NavLink>
-
-    }
+        <div to={item.path} className='nav-links' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2} >
+            {item.title} <i className="fas fa-caret-down"/>
+        </div>
+        {dropdown2 && <Dropdown dataItem={MediaItems} />}
     </>
-  );
+
+    :
+
+    <NavLink to={item.path} className='nav-links'>
+        {item.title}
+    </NavLink>
+    
+    }   
+    </>
+    );
 }
 
 export default NavSubMenu

@@ -4,6 +4,7 @@ import { MenuItems } from '../../../assets/data/MenuItems';
 import './Navbar.css';
 import Dropdown from '../../../organisms/Dropdown';
 import { MediaItems } from '../../../assets/data/MediaItems';
+import NavbarIterate from '../../../organisms/NavbarIterate';
 
 
 function Navbar() {
@@ -48,7 +49,8 @@ function Navbar() {
             <div className='navbar-wrapper'>
                 <div className="navbar-container">
                     <ul className='nav-menu'>
-                        <li className="nav-item">
+                        <NavbarIterate />
+                        {/* <li className="nav-item">
                             <NavLink to='/' className='nav-links'>
                                 Home
                             </NavLink>
@@ -87,7 +89,7 @@ function Navbar() {
                             <NavLink to='/contact-us' className='nav-links'>
                                 Contact Us
                             </NavLink>
-                        </li>
+                        </li> */}
                     </ul>
                     <div className="lang">
                         <Link to='/Modal'>

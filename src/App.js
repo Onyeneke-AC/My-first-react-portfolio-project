@@ -11,6 +11,7 @@ import Who from './components/pages/Who';
 import Team from './components/pages/Team'
 import Careers from './components/pages/Careers';
 import Awards from './components/pages/Awards';
+import AllNews from './components/pages/AllNews';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/clients' Component={Clients} />
           <Route path='/contact-us' Component={ContactUs} />
           <Route path='/blogs' Component={Blogs} />
+          <Route path='/news' Component={AllNews} />
           <Route path='/who' Component={Who} />
           <Route path='/team' Component={Team} />
           <Route path='/careers' Component={Careers} />
