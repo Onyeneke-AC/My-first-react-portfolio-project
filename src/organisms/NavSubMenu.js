@@ -50,22 +50,21 @@ function NavSubMenu({ item }) {
     {
     item.title==='About Us'?
         <>
-        <div to={item.path} className='nav-links' onMouseEnter={onMouseEnter1} onMouseLeave={onMouseLeave1} >
+        <div className='nav-links' onMouseEnter={onMouseEnter1} onMouseLeave={onMouseLeave1} >
             {item.title} <i className="fas fa-caret-down"/>
-        </div>
         {dropdown1 && <Dropdown dataItem={MenuItems} />}
+        </div>
         </>
     :
 
     item.title === 'Media'?
     
     <>
-        <div to={item.path} className='nav-links' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2} >
+        <div className='nav-links' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2} >
             {item.title} <i className="fas fa-caret-down"/>
-        </div>
         {dropdown2 && <Dropdown dataItem={MediaItems} />}
+        </div>
     </>
-
     :
 
     <NavLink to={item.path} className='nav-links'>
