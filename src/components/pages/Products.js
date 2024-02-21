@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../templates/Header/Navbar'
+import Navbar from '../templates/header/Navbar'
 import Sidebar from '../templates/header/Sidebar'
 import News from '../templates/header/News'
 import Footer from '../templates/footer/Footer'
