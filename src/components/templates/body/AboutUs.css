@@ -1,0 +1,22 @@
+.about {
+    width: 90vw;
+    padding: 110px 2rem;
+}
+
+.heading > h1 {
+    font-size: 35px;
+}
+
+.our {
+    color: #666;
+}
+
+.team {
+    color: #DA251C;
+}
+
+@media screen and (min-width: 1200px) {
+    .about {
+        width: 73.5vw;
+    }
+}
