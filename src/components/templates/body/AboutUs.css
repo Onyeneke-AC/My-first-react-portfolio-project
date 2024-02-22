@@ -1,6 +1,8 @@
 .about {
+    /* border: 1px solid black; */
+    margin: 0 auto;
     width: 90vw;
-    padding: 110px 2rem;
+    padding: 110px 1.8em;
 }
 
 .heading > h1 {
@@ -13,6 +15,10 @@
 
 .team {
     color: #DA251C;
+}
+
+.card-container {
+    /* border: 1px solid red; */
 }
 
 @media screen and (min-width: 1200px) {
