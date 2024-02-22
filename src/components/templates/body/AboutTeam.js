@@ -19,6 +19,10 @@ function AboutTeam() {
                     <>
                         <figure  key={index} className="card">
                         <img src={member.src} alt="" />
+                        <figcaption>
+                            <h3>{member.name}</h3>
+                            <p>{member.role}</p>
+                        </figcaption>
                         </figure>
                     </>
                     )
