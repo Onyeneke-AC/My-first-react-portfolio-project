@@ -24,7 +24,7 @@ export const TeamData = [
         cName: 'lead heads',
     },
     {
-        src: './images/leaders/onyinye.jpg',
+        src: './images/leaders/onyinye.webp',
         name: 'Onyinye',
         role: 'Group Counsel',
         cName: 'lead employee',
