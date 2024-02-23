@@ -31,18 +31,27 @@
     overflow: hidden;
 }
 
-.card-figcap {
+.red {
     background-color: #DA251C;
+}
+
+.black {
+    background-color: #000;
+}
+
+.red,
+.black {
     text-align: center;
     color: white;
     font-size: 10px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     line-height: 1.6;
 }
 
-.card-figcap > h3 {
+.red > h3,
+.black > h3 {
     color: lightgray;
     font-size: 17px;
     font-weight: 500;
