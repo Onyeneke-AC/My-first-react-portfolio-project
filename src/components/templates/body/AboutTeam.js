@@ -17,9 +17,9 @@ function AboutTeam() {
                 TeamData.map((member, index) => 
                     (
                     <>
-                        <figure  key={index} className="card">
+                        <figure  key={index} className={member.cName}>
                         <img src={member.src} alt="" />
-                        <figcaption>
+                        <figcaption className='card-figcap'>
                             <h3>{member.name}</h3>
                             <p>{member.role}</p>
                         </figcaption>

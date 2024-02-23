@@ -18,7 +18,34 @@
 }
 
 .card-container {
-    /* border: 1px solid red; */
+     /* border: 1px solid red; */
+     margin-top: 100px;
+     display: flex;
+     flex-direction: column;
+     gap: 100px;
+}
+
+.lead {
+    /* border: 1px solid black; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-figcap {
+    background-color: #DA251C;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    border: 1px solid red;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    line-height: 1.6;
+}
+
+.card-figcap > h3 {
+    color: lightgray;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 @media screen and (min-width: 1200px) {
