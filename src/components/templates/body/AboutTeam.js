@@ -16,15 +16,26 @@ function AboutTeam() {
             {
                 TeamData.map((member, index) => 
                     (
-                    <>
-                        <figure  key={index} className={member.cName}>
-                        <img src={member.src} alt="" />
-                        <figcaption className={member.fName}>
-                            <h3>{member.name}</h3>
-                            <p>{member.role}</p>
-                        </figcaption>
-                        </figure>
-                    </>
+                        member.cName === 'lead employee' ?
+                        <div className="second-wrapper">
+                            <figure  key={index} className={member.cName}>
+                            <img src={member.src} alt="" />
+                            <figcaption className={member.fName}>
+                                <h3>{member.name}</h3>
+                                <p>{member.role}</p>
+                            </figcaption>
+                            </figure>
+                        </div>
+                        :
+                        <div className='first-wrapper'>
+                            <figure  key={index} className={member.cName}>
+                            <img src={member.src} alt="" />
+                            <figcaption className={member.fName}>
+                                <h3>{member.name}</h3>
+                                <p>{member.role}</p>
+                            </figcaption>
+                            </figure>
+                        </div>
                     )
                 )
             }
