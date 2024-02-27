@@ -3,6 +3,7 @@
     margin: 0 auto;
     width: 90vw;
     padding: 110px 1.8em;
+    max-width: 1100px;
 }
 
 .heading > h1 {
@@ -51,6 +52,7 @@
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     line-height: 1.6;
+    max-height: 70px;
 }
 
 .red > h3,
@@ -58,12 +60,6 @@
     color: lightgray;
     font-size: 17px;
     font-weight: 500;
-}
-
-@media screen and (min-width: 1200px) {
-    .about {
-        width: 73.5vw;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -95,5 +91,39 @@
     .ceo {
         flex-basis: 49%;
         margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .about {
+        width: 90vw;
+    }
+    
+    .card-container {
+        gap: 1.5%;
+        margin-top: -6rem;
+    }
+
+    .employee {
+        flex-basis: 23.5%;
+        margin-top: 90px;
+    }
+
+    .heads_emma {
+        flex-basis: 32%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .heads {
+        flex-basis: 32%;
+        margin-top: 90px;
+        margin-bottom: 20px;
+    }
+
+    .ceo {
+        flex-basis: 100%;
+        max-width: 320px;
+        margin: auto 20rem;
     }
 }

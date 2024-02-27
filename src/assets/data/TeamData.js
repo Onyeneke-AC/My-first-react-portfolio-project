@@ -24,7 +24,7 @@ export const TeamData = [
         src: './images/leaders/emmanuel.jpg',
         name: 'Emmanuel',
         role: 'Executive Director, Government and Multilateral Agencies',
-        cName: 'lead heads_emma',
+        cName: 'lead heads heads_emma',
         fName: 'black',
     },
     {
