@@ -77,9 +77,8 @@
     .employee {
         /* border: 6px solid black; */
         flex-flow: row wrap;
-        flex-basis: 46%;
-        margin-top: 10px;
+        flex-basis: 48%;
+        margin-top: 20px;
         /* align-items: flex-end; */
-
     }
 }
