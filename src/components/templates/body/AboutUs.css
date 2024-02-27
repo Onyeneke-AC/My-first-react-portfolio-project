@@ -18,7 +18,7 @@
 }
 
 .card-container {
-     border: 1px solid red;
+     /* border: 1px solid red; */
      margin-top: 100px;
      display: flex;
      flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 .lead {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 0.5rem;
     overflow: hidden;
     padding-bottom: 0;
@@ -80,5 +80,20 @@
         flex-basis: 48%;
         margin-top: 20px;
         /* align-items: flex-end; */
+    }
+    
+    .heads {
+        flex-basis: 48%;
+    }
+
+    .heads_emma {
+        flex-basis: 49%;
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+
+    .ceo {
+        flex-basis: 49%;
+        margin-bottom: 100px;
     }
 }
