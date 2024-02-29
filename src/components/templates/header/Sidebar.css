@@ -1,13 +1,14 @@
 .side-nav {
   background-color: black;
-  height: 80px;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
-  z-index: 2000;
+  z-index: 100;
   padding: 1rem auto;
   overflow: hidden;
+  position: sticky;
 }
 
 .side-wrapper {
@@ -70,6 +71,7 @@
   left: 0;
   transition: all 0.8s ease;
   z-index: 1000;
+
 }
 
 .sidebar-wrap {
