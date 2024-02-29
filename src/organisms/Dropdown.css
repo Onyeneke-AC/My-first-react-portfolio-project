@@ -4,7 +4,7 @@
     top: 58px;
     list-style: none;
     text-align: start;
-    z-index: 1000;
+    z-index: 1000 !important;
     /* border: 2px solid blue; */
     font-size: 5px;
 }
